@@ -1,0 +1,118 @@
+@import "../base/base";
+@import "../base/variables";
+
+@include mobile {
+    .nav {
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            .navmenu {
+                background-color: $red-transparent;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 0;
+                height: 100%;
+                z-index: 1000;
+                transition: 0.5s;
+            }
+
+            .logo,
+            .menuicon {
+                padding: 19px;
+            }
+
+            a:link,
+            a:visited {
+                color: white;
+                padding: 8px;
+            }
+
+            a:hover {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                color: black;
+                transition: all 0.5s ease-in-out;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                li {
+                    list-style-type: none;
+                    padding: 20px 0;
+                }
+
+                li:first-child {
+                    a {
+                        font-size: 70px;
+                        position: absolute;
+                        top: -15px;
+                        right: 15px;
+                        display: none;
+                        color: $black;
+                    }
+
+                    a:hover {
+                        border: none;
+                    }
+                }
+
+                li:nth-child(2) {
+                    margin-top: 90px;
+                }
+            }
+        }
+    }
+}
+
+@include middle-devices {
+    .nav {
+        .wrapper {
+            ul {
+                flex-direction: row;
+                justify-content: flex-end;
+
+                li {
+                    padding: 24px 0;
+
+                    &:nth-child(2) {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .menuicon {
+                display: none;
+            }
+
+            .navmenu {
+                width: auto;
+                height: auto;
+                background-color: white;
+                position: unset;
+            }
+
+            a:link,
+            a:visited {
+                color: $black;
+                padding: 5px 0;
+                border-top: 1px solid $white;
+                border-bottom: 1px solid $white;
+            }
+
+            a:hover {
+                box-sizing: border-box;
+                color: $red;
+                border-top: 1px solid $red;
+                border-bottom: 1px solid $red;
+            }
+        }
+    }
+}

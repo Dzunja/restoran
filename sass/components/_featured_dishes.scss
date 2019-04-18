@@ -1,0 +1,145 @@
+@include mobile {
+
+    /* Slider */
+    .slider {
+        .responsive {
+            position: relative;
+            padding-top: 50px;
+        }
+
+        .image-carousel {
+            width: 230px;
+            margin: 0 auto;
+        }
+
+        .image-title {
+            a {
+                margin: 0;
+            }
+
+            h4 {
+                margin: 12px 0 8px 0;
+
+                span {
+                    float: right;
+                }
+            }
+        }
+
+        .slick-slide {
+            margin-top: 30px;
+        }
+
+        .slick-dots li button {
+            background-color: $red !important;
+            border-radius: 50%;
+            font-size: 15px !important;
+        }
+
+        .slick-dots {
+            position: absolute;
+            top: 15px;
+            right: 0;
+            z-index: 1000;
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        .slick-dots li {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .slick-dots li button {
+            font-size: 5px;
+            line-height: 0;
+            display: block;
+            width: 10px;
+            height: 10px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background-color: grey !important;
+        }
+
+        .slick-dots li button:hover,
+        .slick-dots li button:focus {
+            outline: none;
+        }
+
+        .slick-dots li button:hover:before,
+        .slick-dots li button:focus:before {
+            opacity: 1;
+        }
+
+        .slick-dotted.slick-slider {
+            margin-bottom: 0 !important;
+        }
+
+        .btn-counter {
+            &::after {
+                content: attr(data-count);
+                margin-left: 2px;
+                font-size: 14px;
+                color: red;
+            }
+        }
+
+        .heart {
+            &::before {
+                content: '\2661';
+                color: $red;
+                font-size: 26px;
+            }
+        }
+
+        .heartcolor {
+            &::before {
+                // content: '\2764';
+                content: '\2661';
+                color: $red;
+                font-size: 26px;
+            }
+        }
+    }
+
+}
+
+.active {
+    // color: $red;
+    font-size: 20px;
+}
+
+
+@include middle-devices {
+    .slider {
+        .slick-dots {
+            text-align: right;
+            top: -22px;
+            right: 0px;
+        }
+
+        .slick-slide {
+            margin-top: 5px;
+        }
+    }
+
+    .section-title {
+        h3 {
+            text-align: left;
+            padding-right: 10px;
+        }
+    }
+
+}

@@ -1,0 +1,88 @@
+@import "../base/variables";
+
+@include mobile {
+    .aboutus {
+        h3:first-child {
+            margin-bottom: 40px;
+        }
+
+        ul {
+            list-style-type: circle;
+            margin-top: 5px;
+        }
+
+        .quatation-mark {
+            text-align: center;
+            font-size: 28px;
+            color: grey;
+            margin-bottom: 0;
+            font-family: AleoItalic;
+        }
+
+        .col1 {
+            div:first-child {
+                border-bottom: 1px solid $grey;
+                margin-bottom: 10px;
+            }
+
+            div:last-child {
+                padding-left: 12px;
+
+                strong {
+                    padding-bottom: 5px;
+                }
+            }
+
+            li::before {
+                content: "\2022 ";
+                color: $red;
+                margin-right: 4px;
+                margin-left: -12px;
+            }
+        }
+
+        .quatation-mark {
+            position: relative;
+            margin-top: 60px;
+            padding: 0 30px;
+
+            &::before {
+                content: '';
+                background-image: url(../images/quote.jpg);
+                height: 30px;
+                width: 36px;
+                display: inline-block;
+                position: absolute;
+                top: -20px;
+                left: 0;
+            }
+
+            &::after {
+                content: '';
+                background-image: url(../images/quotedown.png);
+                height: 30px;
+                width: 35px;
+                display: inline-block;
+                position: absolute;
+                bottom: -20px;
+                right: 0;
+            }
+        }
+    }
+}
+
+@include medium-device {
+    .aboutus {
+        .aboutus-inner {
+            display: flex;
+        }
+
+        .col1 {
+            margin-right: 30px;
+        }
+
+        .col2 {
+            margin-left: 30px;
+        }
+    }
+}

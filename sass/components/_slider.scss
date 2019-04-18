@@ -1,0 +1,196 @@
+@include mobile {
+    .hero {
+        border-bottom: 4px solid $red;
+        margin: 0 auto;
+        max-width: 1500px;
+
+        .slick-slide {
+            background-color: $black;
+        }
+
+        div {
+            position: relative; // padding-top: 4px;            
+        }
+
+        .hero-inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+
+            h2 {
+                font-size: 30px;
+                margin: 0;
+                font-family: WCManoNegraBta;
+                padding: 0;
+                width: 300px;
+            }
+
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .line {
+                display: inline-block;
+                position: relative;
+                display: none;
+            }
+
+            .line span:before,
+            .line span:after {
+                content: "";
+                position: absolute;
+                height: 5px;
+                border-bottom: 1px solid white;
+                top: 6px;
+                width: 10%;
+            }
+
+            .line span:before {
+                right: 100%;
+                margin-right: 15px;
+            }
+
+            .line span:after {
+                left: 100%;
+                margin-left: 15px;
+            }
+        }
+
+        .slick-dots li button {
+            background-color: $red !important;
+            border-radius: 50%;
+            font-size: 15px !important;
+        }
+
+        .slick-dots {
+            position: absolute;
+            bottom: 10%;
+            right: 0;
+            z-index: 999;
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        .slick-dots li {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .slick-dots li button {
+            font-size: 5px;
+            line-height: 0;
+            display: block;
+            width: 10px;
+            height: 10px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background-color: $light-grey !important;
+        }
+
+        .slick-dots li button:hover,
+        .slick-dots li button:focus {
+            outline: none;
+        }
+
+        .slick-dots li button:hover:before,
+        .slick-dots li button:focus:before {
+            opacity: 1;
+        }
+
+        .slick-dotted.slick-slider {
+            margin-bottom: 0 !important;
+        }
+
+        .slick-next {
+            right: 25px;
+        }
+
+        .slick-prev {
+            z-index: 999;
+            display: none !important;
+        }
+
+        .ib-container {
+            position: relative;
+        }
+
+        .lb-nav a.lb-next {
+            width: 20% !important;
+        }
+
+        .lightbox .lb-image {
+            border: 4px solid #3b3b3b;
+        }
+    }
+}
+
+
+
+
+@include small-devices {
+    .hero {
+        .hero-inner {
+            h2 {
+                font-size: 45px;
+                min-width: 480px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .line {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@include middle-devices {
+    .hero {
+        .hero-inner {
+            h2 {
+                font-size: 60px;
+                min-width: 640px;
+            }
+        }
+    }
+}
+
+@include medium-device {
+    .hero {
+        .hero-inner {
+            h2 {
+                font-size: 70px;
+                min-width: 768px;
+            }
+        }
+    }
+}
+
+@include large-device {
+    .hero {
+        .hero-inner {
+            h2 {
+                font-size: 100px;
+                min-width: 1024px;
+            }
+        }
+    }
+}

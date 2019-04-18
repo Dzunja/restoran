@@ -1,0 +1,53 @@
+@import "../base/variables";
+
+@include mobile {
+    footer {
+        background-color: $black;
+
+        .footer {
+            color: $white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            ul {
+                width: 40%;
+                padding: 25px 0;
+
+                li {
+                    line-height: 1.6;
+                    font-family: AleoLight;
+                    color: $light-grey;
+                }
+
+                li:first-child {
+                    font-family: AleoRegular;
+                }
+
+                li:last-child {
+                    font-family: AleoBold;
+                }
+            }
+
+            ul:nth-of-type(3) li {
+                font-family: AleoBold;
+            }
+        }
+    }
+}
+
+@include medium-device {
+    footer {
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+
+            ul {
+                width: 25%;
+                padding: 25px 0;
+            }
+        }
+    }
+}

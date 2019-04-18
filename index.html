@@ -1,0 +1,445 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Restaurant</title>
+
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="http://allfont.net/allfont.css?fonts=vtc-letterer-pro" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="nav" id="back">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+
+            <div class="menunav" >
+                <div class="menuicon" onclick="openNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <nav class="navmenu" id="navmenu">
+                    <ul>
+                        <li><a href="javascript:void(0)" class="close" onclick="closeNav()"> &times;</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#dishes">Dishes</a></li>
+                        <li><a href="#aboutus">About us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <!-- end wrapper -->
+    </header>
+    <!-- end header -->
+
+    <!-- SLIDER  -->
+    <section class="hero" >
+        <div class="one-time">
+            <div>
+                <img src="images/hero_02.jpg" alt="hero1">
+                <div class="hero-inner">
+                    <h2>This Template Is Awesome</h2>
+                    <p class="line"><span> resto restaurant home page website template </span></p>
+                </div>
+            </div>
+            <div><img src="images/hero_02.jpg" alt="hero1">
+                <div class="hero-inner">
+                    <h2>This Template Is Awesome</h2>
+                    <p class="line"><span> resto restaurant home page website template </span></p>
+                </div>
+            </div>
+            <div><img src="images/hero_02.jpg" alt="hero1">
+                <div class="hero-inner">
+                    <h2>This Template Is Awesome</h2>
+                    <p class="line"><span> resto restaurant home page website template </span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end slider -->
+
+    <!-- RESTAURANT MENU -->
+    <section class="rest-menu" id="menu">
+        <div class="wrapper">
+            <div class="menuheader">
+                <h3>The Menu</h3>
+            </div>
+            <div class="menulist">
+                <ul>
+                    <li>
+                        <div class="menu-list">
+                            <h5 class="line-through"><span>Voluptate cillum fugiat</span><em>$50</em></h5>
+                            <small>Cheese, tomato, mushrooms, onions.</small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-list">
+                            <h5 class="line-through"><span>Voluptate cillum fugiat</span><em>$50</em></h5>
+                            <small>Cheese, tomato, mushrooms, onions.</small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-list">
+                            <h5 class="line-through"><span>Voluptate cillum fugiat</span><em>$50</em></h5>
+                            <small>Cheese, tomato, mushrooms, onions.</small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-list">
+                            <h5 class="line-through"><span>Voluptate cillum fugiat</span><em>$50</em></h5>
+                            <small>Cheese, tomato, mushrooms, onions.</small>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <div class="menu-list">
+                            <h5 class="line-through"><span>Voluptate cillum fugiat</span><em>$50</em></h5>
+                            <small>Cheese, tomato, mushrooms, onions.</small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-list">
+                            <h5 class="line-through"><span>Voluptate cillum fugiat</span><em>$50</em></h5>
+                            <small>Cheese, tomato, mushrooms, onions.</small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-list">
+                            <h5 class="line-through"><span>Voluptate cillum fugiat</span><em>$50</em></h5>
+                            <small>Cheese, tomato, mushrooms, onions.</small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-list">
+                            <h5 class="line-through"><span>Voluptate cillum fugiat</span><em>$50</em></h5>
+                            <small>Cheese, tomato, mushrooms, onions.</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="button" >
+                <a href="#"><span>View all menu </span><i class="arrow down"></i></a>
+            </div>
+        </div>
+        <!-- end wrapper -->
+    </section>
+    <!-- end section menu -->
+
+    <!-- FEATURED DISHES CAROUSEL -->
+    <section class="slider" id="dishes">
+        <div class="wrapper padding">
+            <div class="section-title">
+                <h3 class="line-through"><span>Featured dishes</span></h3>
+            </div>
+            <div class="responsive">
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes1.png">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <a href="#" title="Love it" class="btn btn-counter heart" data-count="0">
+                                </a>
+                            </span><small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes2.png">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <a href="#" title="Love it" class="btn btn-counter heart" data-count="0">
+                                </a>
+                            </span><small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes3.png">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <a href="#" title="Love it" class="btn btn-counter heart" data-count="0">
+                                </a>
+                            </span><small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes4.jpg">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <a href="#" title="Love it" class="btn btn-counter heart" data-count="0">
+                                </a>
+                            </span><small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes1.png">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <a href="#" title="Love it" class="btn btn-counter heart" data-count="0">
+                                    </a>
+                            </span><small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes2.png">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <a href="#" title="Love it" class="btn btn-counter heart" data-count="0">
+                                    </a>
+                            </span><small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes3.png">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <a href="#" title="Love it" class="btn btn-counter heart" data-count="0">
+                                    </a>
+                            </span><small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes4.jpg">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <a href="#" title="Love it" class="btn btn-counter" data-count="0">
+                                         <span><i class="far fa-heart"></i></span>
+                                        </a>
+                            </span><small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes1.png">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <span class="heart" data-count="0"><i class="far fa-heart"></i></span> <small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes2.png">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <span class="heart"><i class="far fa-heart"></i></span> <small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes3.png">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <span class="heart" data-count="0"><i class="far fa-heart"></i></span> <small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="image-carousel">
+                        <img src="images/dishes4.jpg">
+                        <div class="image-title">
+                            <h4>Figiat nulla sint <span>30</span></h4>
+                            <span class="heart"><i class="far fa-heart"></i></span> <span class="count"></span><small>people love this</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end responsive -->
+        </div>
+        <!-- end wrapper -->
+    </section>
+    <!-- end slider carousel -->
+
+    <div class="aboutus" >
+        <div class="wrapper padding">
+            <div class="section-title">
+                <h3 class="line-through"><span>About us</span></h3>
+            </div>
+            <h3>Today's restaurant is theater on a grand scale.</h3>
+            <div class="aboutus-inner">
+                <div class="col1">
+                    <div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            text ever
+                            <strike>since the 1500s</strike>, <strong>when an unknown printer</strong> took a galley of type and
+                            scrambled it to make a type specimen book. <strong>It has survived not only five centuries </strong>,
+                            but also the leap into electronic typesetting, Lorem ipsum is made on 25th April 1500.
+                        </p>
+
+                    </div>
+                    <div>
+                        <strong>It was popularised:</strong>
+                        <ul>
+                            <li>Lorem Ipsum is simply dummy text of the printing </li>
+                            <li>When an unknown printer took a galley of type and scrambled it to make a type specimen book.</li>
+                            <li>Dummy text ever since the 1500s</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col2">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong> Lorem Ipsum has been the industry's standard </strong>dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                        make a type specimen book.
+                        <strong> It has survived not only five centuries </strong>, but also the leap into electronic typesetting.
+                    </p>
+                    <div>
+                        <div class="quatation-mark">
+                                emories are like mulligatawny soup in a cheap restaurant. It is best not to stir them.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end wrapper -->
+        </div>
+        <!-- end aboutus -->
+
+        <!-- end footer -->
+
+        <section class="gallery">
+            <div class="wrapper padding">
+                <div class="section-title">
+                    <h3 class="line-through"><span>The Gallery</span></h3>
+                </div>
+                <div class="row">
+                    <div class="column">
+                            <a href="images/gallery1.png" data-lightbox="roadtrip">
+                                <div class="backgroundimage">
+                                    <img src="images/gallery1.png" class="gallery-img" alt="#">
+                                </div>
+                                <img src="images/more.png" class="middle" alt="more">
+                            </a>
+                    </div>
+                    <div class="column">
+                        <a href="images/gallery2.png" data-lightbox="roadtrip">
+                            <div class="backgroundimage">
+                                <img src="images/gallery2.png" class="gallery-img" alt="#">
+                            </div>
+                            <img src="images/more.png" class="middle" alt="more">
+                        </a>
+                        <a href="images/gallery3.png" data-lightbox="roadtrip">
+                            <img src="images/gallery3.png" class="gallery-img" alt="#">
+                            <img src="images/more.png" class="middle" alt="more">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="images/gallery4.png" data-lightbox="roadtrip">
+                            <img src="images/gallery4.png" class="gallery-img" alt="#">
+                            <img src="images/more.png" class="middle" alt="more">
+                        </a>
+                        <a href="images/gallery5.png" data-lightbox="roadtrip">
+                            <img src="images/gallery5.png" class="gallery-img" alt="#">
+                            <img src="images/more.png" class="middle" alt="more">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end.wrapepr -->
+        </section>
+        <!-- end gallery -->
+
+        <footer>
+            <div class="wrapper footer padding">
+                <ul>
+                    <li>New York Restaurant</li>
+                    <li>3926 Anmoore Road</li>
+                    <li>New York, NY 10014</li>
+                    <li>718-749-1714</li>
+                </ul>
+                <ul>
+                    <li>France Restaurant</li>
+                    <li>68, rue de la Couronne</li>
+                    <li>75002 PARIS</li>
+                    <li>02.94.23.69.56</li>
+                </ul>
+                <ul>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Privacy Policy</li>
+                    <li>Contact</li>
+                </ul>
+                <ul>
+                    <li><img src="images/logo.png" alt="logo"></li>
+                    <li>© All Rights Reserved 2014.</li>
+                    <li>Find More at Pixelhint.com.</li>
+                </ul>
+            </div>
+            <!-- end wrapper -->
+        </footer>
+
+        <!-- Place somewhere in the <body> of your page -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/lightbox.js"></script>
+
+        <script>
+            $('.one-time').slick({
+                dots: true,
+                arrows: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+            });
+
+            $('.btn-counter').on('click', function (event, count, number) {
+                event.preventDefault();
+
+                var $this = $(this),
+                    count = $this.attr('data-count'),
+                    active = $this.hasClass('active'),
+                    $heart = $this.toggleClass('heartcolor'),
+                    $remove = $this.removeAttr('tabindex');
+                multiple = $this.hasClass('multiple-count');
+
+                // Second method, use when ... I dunno when but it looks cool and that's why it is here
+                $.fn.noop = $.noop;
+                $this.attr('data-count', !active || multiple ? ++count : --count)[multiple ? 'noop' :
+                    'toggleClass']('active');
+
+            });
+        </script>
+</body>
+
+</html>

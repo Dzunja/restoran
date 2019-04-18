@@ -1,0 +1,107 @@
+@import "../base/variables";
+
+@include mobile {
+    .menuheader {
+        width: 150px;
+        height: 70px;
+        box-sizing: content-box;
+        position: relative;
+        background-color: $red;
+        color: $white;
+        text-align: center;
+        padding-top: 2px;
+        margin: 0 auto 40px auto;
+    }
+
+    .menuheader:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 13px solid $white;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+    }
+
+    .button {
+        margin-top: 60px;
+    }
+
+    .rest-menu {
+        .wrapper {
+            padding-bottom: 40px;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        .menu-list {
+            margin-bottom: 25px;
+
+            h5 {
+                margin: 0;
+                padding: 0;
+            }
+
+            .line-through {
+                position: relative;
+                z-index: 1;
+
+                &:before {
+                    border-top: 2px solid $verylightgrey;
+                    content: "";
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 90%;
+                    z-index: -1;
+                }
+            }
+
+            span {
+                overflow: hidden;
+                background: #fff;
+                padding-right: 30px;
+            }
+
+            em {
+                float: right;
+                padding-left: 25px;
+                background-color: white;
+            }
+        }
+    }
+}
+
+@include medium-device {
+    .rest-menu {
+        ul {
+            padding: 0;
+        }
+    }
+
+    .menulist {
+        display: flex;
+
+        ul {
+            width: 50%;
+            padding-right: 100px;
+        }
+
+        ul:nth-of-type(2) {
+            padding-right: 0;
+        }
+    }
+}
+
+@include large-device {
+    .menuheader {
+        margin-bottom: 70px;
+    }
+}

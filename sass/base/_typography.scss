@@ -1,0 +1,83 @@
+@font-face {
+    font-family: AleoRegular;
+    src: url(../fonts/Aleo-Regular.otf);
+}
+
+@font-face {
+    font-family: AleoLightItalic;
+    src: url(../fonts/Aleo-LightItalic.otf);
+}
+
+@font-face {
+    font-family: WCManoNegraBta;
+    src: url(../fonts/WCManoNegraBta.otf);
+}
+
+@font-face {
+    font-family: AleoBold;
+    src: url(../fonts/Aleo-Bold.otf);
+}
+
+@font-face {
+    font-family: AleoLight;
+    src: url(../fonts/Aleo-Light.otf);
+}
+
+@font-face {
+    font-family: AleoItalic;
+    src: url(../fonts/Aleo-Light.otf);
+}
+
+@media (min-width: 320px) {
+    a {
+        font-size: 14px;
+        font-family: AleoRegular;
+    }
+
+    h1 {
+        font-size: 40px
+    }
+
+    h2 {
+        font-size: 22px
+    }
+
+    h3 {
+        font-size: 20px
+    }
+
+    h4 {
+        font-size: 18px
+    }
+
+    h5 {
+        font-size: 16px
+    }
+
+    h6 {
+        font-size: 14px
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: AleoLight;
+    }
+
+    li {
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: AleoLightItalic
+    }
+
+    small {
+        font-family: AleoLightItalic;
+        color: $light-grey;
+    }
+
+    h5 {
+        font-family: AleoRegular;
+        font-weight: LightItalic;
+        font-weight: 200;
+    }
+}
